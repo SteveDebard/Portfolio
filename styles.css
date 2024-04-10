@@ -2,8 +2,9 @@
     margin:0;
     padding:0;
 }
+
 body {
-    background-color: #e1d88f; /* Fond légèrement plus foncé */
+    background-color: #e1d88f;
 }
 
 
@@ -14,6 +15,7 @@ header{
     position: sticky;
     z-index: 5;
     top: 0;
+    transition: height 0.3s ease;
 }
 
 .logo{
@@ -34,6 +36,8 @@ ul{
     position: relative;
     margin-left: 20px;
     padding: 10px;
+    margin-bottom: 20px;
+    height: auto;
 }
 .texte{
     margin-top: 20px;
@@ -69,9 +73,8 @@ ul{
     text-decoration: none;
     padding: 10px;
     border-radius: 30px;  
-    
-  
 }
+
 .divicone{
     gap:20px;
     margin-bottom: 200px;
@@ -107,6 +110,7 @@ ul{
     position: relative;
     top: 200px;
     padding: 20px;
+    
   }
 .softskills{
     width: 500px;
@@ -137,7 +141,62 @@ ul{
      display: flex; 
     justify-content: center; 
 }
+footer p{
+
+    text-align: center; 
+    width: 100%;
+    padding: 20px 0; 
+    position: absolute;
+}
+.titreprojet{
+    margin-left: 30px;
+    text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer .logo {
+    width: auto
+}
+.footerlogo{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 30px;
+    height: 10px;
+    align-items: center;
+    position: relative;
+    margin-left: 800px;
+}
 footer{
     background-color: palegoldenrod;
     margin-top: 30px ;
+    justify-content: center;
+    align-items: center;
 }
+.flex.basdepage {
+    justify-content: flex-start; 
+    padding: 20px;}
+
+    /* Ajouter une transition fluide à la hauteur de l'en-tête */
+.shrink-on-scroll {
+    transition: height 0.3s ease;
+}
+
+/* Réduire la hauteur de l'en-tête lorsque vous faites défiler la page */
+.shrink-on-scroll:scroll {
+    height: 70px; /* Hauteur réduite pour l'en-tête */
+}
+
+/* Assurez-vous que les liens restent visibles et cliquables */
+.shrink-on-scroll ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Réduire l'opacité des liens pendant la transition */
+.shrink-on-scroll:scroll ul {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
