@@ -3,6 +3,7 @@
     padding:0;
 }
 
+
 p{
     color: white;
 }
@@ -242,4 +243,8 @@ footer .logo {
 
 .flex.basdepage {
     padding: 20px;
+}
+
+.liste a{
+    color: white;
 }

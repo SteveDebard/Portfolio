@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="flex">
-        <ul class="flex">
+        <ul class="liste flex">
             <li><a href="#debut">Accueil</a></li>
             <li><a href="#truc">Mes projets</a></li>
             <li><a href="#skills">Mes points fort</a></li>
@@ -24,12 +25,12 @@
         <p class="texte">Depuis que je suis tout petit, j'ai toujours eu un ordinateur sous la main. Cette passion pour la technologie m'a naturellement conduit au développement web. En mars, j'ai commencé à apprendre le développement front-end, et je me suis rapidement rendu compte que c'est ce que je veux faire de ma vie. J'aime créer des choses et voir mes idées prendre forme à l'écran. Aujourd'hui, je suis déterminé à en faire mon métier et à continuer d'apprendre pour m'améliorer chaque jour.
     </p>
     <div class= "divicone flex">
-    <a class="contact flex" href="">Contactez moi ! <i class="fa-regular fa-envelope"></i></a>
-    <a class="iconehero" href=""><i class="fa-brands fa-linkedin"></i></a>
+    <a class="contact flex" href="mailto:steve.debard4210@gmail.com">Contactez moi ! <i class="fa-regular fa-envelope"></i></a>
+    <a class="iconehero" target="_blank" href="https://www.linkedin.com/in/steve-debard-6985a7302/"><i class="fa-brands fa-linkedin"></i></a>
     </div>
 
 </div>
-    <div class="heroimg">
+    <div class="heroimg" data-aos="fade-left" data-aos-duration="1500">
         <img src="assets/steve.png" alt="photo de moi">
     </div>
     </div>
@@ -40,7 +41,7 @@
 <main>
     <section class="projets">
         <h2 class="titreprojet"id="truc">Mes projets</h2>
-        <div class="carteTexte flex">
+        <div class="carteTexte flex" data-aos="fade-left" data-aos-duration="3000">
         <div class="carte">
               <img class="imgprojets" src="assets/gamelab.png" alt="preview du site avec une image">
             <div class="paragraphe">
@@ -54,7 +55,7 @@
 
 
             <!--DEBUT PROJET 2-->
-                <div class="cartetexte2 flex">
+                <div class="cartetexte2 flex" data-aos="fade-right" data-aos-duration="1000">
                     <p class="textep">Dans le cadre de ma formation "Latoile", j'ai travaillé en équipe sur un site pour une fausse application mobile dédiée à l'écologie. Notre but était de créer un site qui présente cette application de manière claire et attrayante. Ce projet m'a permis de développer mes compétences en design et en développement tout en collaborant avec mes coéquipiers.</p>
                     <div class="carte2">
                         <img class="imgprojets" src="assets/ecochallenge.png" alt="preview du site avec une image">
@@ -68,7 +69,7 @@
             <!--ENFIN FINI LA SECTION PROJETS-->
 
             <!--debut section soft skill-->
-            <div class="container" id="skills">
+            <div class="container" id="skills" data-aos="flip-up" data-aos-duration="2000">
                 <section class="skills">
                     <div class="softskills">
                             <h2>Mes Soft Skills</h2>
@@ -104,7 +105,11 @@
 <footer class="flex basdepage" id="contact">
         <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/8/86/Logo_emlyon_2021.png" alt="logo provisoire la">
         <p>mail : steve.debard4210@gmail.com</p>
-        <a class="footerlogo" href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a class="footerlogo" target="_blank" href="https://www.linkedin.com/in/steve-debard-6985a7302/"><i class="fa-brands fa-linkedin"></i></a>
 </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>
